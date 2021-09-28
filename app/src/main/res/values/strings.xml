@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Rick And Morty App</string>
+    <string name="app_name">Rick And Mortyverse</string>
+    <string name="splash_activity_text_view_powered_message">Powered by The Rick And Morty API</string>
+    <string name="splash_activity_image_view_app_icon_description">App icon</string>
 </resources>
