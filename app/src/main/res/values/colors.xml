@@ -7,4 +7,6 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="apple_text_color_splash_activity">#41B738</color>
+    <color name="astronaut_blue_layout_background_tint_splash_activity">#023655</color>
 </resources>

@@ -56,4 +56,18 @@ dependencies {
     testImplementation lib.junit
     androidTestImplementation lib.extJunit
     androidTestImplementation lib.espresso
+    testImplementation lib.androidxCoreTesting
+    testImplementation lib.mockitoKotlin
+    testImplementation lib.mockitoCore
+    testImplementation lib.mockitoInline
+    testImplementation lib.kotlinxCoroutinesTest
+
+    //Junit
+    implementation lib.junit
+
+    //koin
+    implementation lib.koin
+
+    //viewModel
+    implementation lib.viewModel
 }
