@@ -51,6 +51,8 @@ dependencies {
     //UI
     implementation lib.material
     implementation lib.constraintLayout
+    implementation lib.viewpager
+    implementation lib.androidxLegacySupport
 
     //test
     testImplementation lib.junit

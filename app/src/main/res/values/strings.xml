@@ -2,4 +2,10 @@
     <string name="app_name">Rick And Mortyverse</string>
     <string name="splash_activity_text_view_powered_message">Powered by The Rick And Morty API</string>
     <string name="splash_activity_image_view_app_icon_description">App icon</string>
+    <string name="main_activity_tab_name_characters">Characters</string>
+    <string name="main_activity_tab_name_seasons">Seasons</string>
+    <string name="main_activity_tab_name_locations">Locations</string>
+    <string name="characters_fragment_text_view_name_display">Characters Fragment</string>
+    <string name="seasons_fragment_text_view_name_display">Seasons Fragment</string>
+    <string name="location_fragment_text_view_name_display">Location Fragment</string>
 </resources>
