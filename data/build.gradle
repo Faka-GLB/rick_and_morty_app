@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.library'
     id 'kotlin-android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -36,4 +37,36 @@ preBuild.dependsOn ktlint
 dependencies {
 
     implementation project(path: ':domain')
+
+    def lib = rootProject.ext.generalDependencies
+
+    //basics
+    implementation lib.coreKtx
+
+    //web
+    implementation lib.retrofit
+    implementation lib.retrofitConverter
+    implementation lib.gson
+    implementation lib.okhttp
+
+    //test
+    testImplementation lib.junit
+    androidTestImplementation lib.extJunit
+    androidTestImplementation lib.espresso
+    testImplementation lib.androidxCoreTesting
+    testImplementation lib.mockitoKotlin
+    testImplementation lib.mockitoCore
+    testImplementation lib.mockitoInline
+    testImplementation lib.kotlinxCoroutinesTest
+
+    //Junit
+    implementation lib.junit
+
+    //koin
+    implementation lib.koin
+
+    //room
+    implementation lib.room
+    implementation lib.roomCoroutines
+    kapt lib.roomCompiler
 }

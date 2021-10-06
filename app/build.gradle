@@ -72,4 +72,8 @@ dependencies {
 
     //viewModel
     implementation lib.viewModel
+
+    //glide
+    implementation lib.glide
+    annotationProcessor lib.glideCompiler
 }

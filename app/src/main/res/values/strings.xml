@@ -8,4 +8,7 @@
     <string name="characters_fragment_text_view_name_display">Characters Fragment</string>
     <string name="seasons_fragment_text_view_name_display">Seasons Fragment</string>
     <string name="location_fragment_text_view_name_display">Location Fragment</string>
+    <string name="item_character_image_view_description">Character avatar</string>
+    <string name="characters_fragment_text_view_connection_error">Error, check your internet connection and restart the app.</string>
+    <string name="characters_fragment_text_view_empty_response_error">There was a problem with the connection, please restart the app</string>
 </resources>
