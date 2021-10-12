@@ -6,9 +6,12 @@ import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.runBlocking
 import org.junit.Assert.assertEquals
 import org.junit.Test
+import org.junit.runner.RunWith
+import org.mockito.junit.MockitoJUnitRunner
 
 @ExperimentalCoroutinesApi
-class SplashViewModelTest {
+@RunWith(MockitoJUnitRunner::class)
+class SplashViewModelTest : ViewModelTest() {
     private val viewModel = SplashViewModel()
 
     @Test
