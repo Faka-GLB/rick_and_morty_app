@@ -1,10 +1,14 @@
 package com.onboarding.data
 
 import com.onboarding.data.database.entity.RoomCharacter
+import com.onboarding.data.database.entity.RoomEpisode
 import com.onboarding.data.database.entity.RoomLocationLink
-import com.onboarding.data.mapper.transform
-import com.onboarding.data.mapper.transformToRoom
+import com.onboarding.data.mapper.transformToCharacterResult
+import com.onboarding.data.mapper.transformToEpisodeResult
+import com.onboarding.data.mapper.transformToRoomCharacter
+import com.onboarding.data.mapper.transformToRoomEpisode
 import com.onboarding.domain.entity.CharacterResult
+import com.onboarding.domain.entity.EpisodeResult
 import com.onboarding.domain.entity.LocationLink
 import org.junit.Assert.assertEquals
 import org.junit.Test
@@ -16,26 +20,38 @@ class RoomMapperTest {
 
     @Test
     fun `location link transform to room`() {
-        val locationTransformed = characterResultTest.transformToRoom().location
+        val locationTransformed = characterResultTest.transformToRoomCharacter().location
         assertEquals(roomLocationLinkTest, locationTransformed)
     }
 
     @Test
     fun `character result to room`() {
-        val characterResultTransformed = characterResultTest.transformToRoom()
+        val characterResultTransformed = characterResultTest.transformToRoomCharacter()
         assertEquals(roomCharacterResult, characterResultTransformed)
     }
 
     @Test
     fun `room locationLink transform to domain entity`() {
-        val locationTransformed = roomCharacterResult.transform().location
+        val locationTransformed = roomCharacterResult.transformToCharacterResult().location
         assertEquals(locationLinkTest, locationTransformed)
     }
 
     @Test
     fun `room character result transform to domain entity`() {
-        val characterResultTransformed = roomCharacterResult.transform()
+        val characterResultTransformed = roomCharacterResult.transformToCharacterResult()
         assertEquals(characterResultTest, characterResultTransformed)
+    }
+
+    @Test
+    fun `episode result transform to room`() {
+        val episodeResultTransformed = episodeResultTest.transformToRoomEpisode()
+        assertEquals(roomEpisodeResult, episodeResultTransformed)
+    }
+
+    @Test
+    fun `room episode result transform to domain entity`() {
+        val episodeResultTransformed = roomEpisodeResult.transformToEpisodeResult()
+        assertEquals(episodeResultTest, episodeResultTransformed)
     }
 
     companion object {
@@ -79,6 +95,26 @@ class RoomMapperTest {
             image = STRING_VALUE,
             episodes = listOf(STRING_VALUE),
             characterUrl = STRING_VALUE,
+            created = STRING_VALUE
+        )
+
+        private val episodeResultTest = EpisodeResult(
+            id = INT_VALUE,
+            episodeName = STRING_VALUE,
+            airDate = STRING_VALUE,
+            episodeCode = STRING_VALUE,
+            characters = listOf(STRING_VALUE),
+            episodeUrl = STRING_VALUE,
+            created = STRING_VALUE
+        )
+
+        private val roomEpisodeResult = RoomEpisode(
+            id = INT_VALUE,
+            name = STRING_VALUE,
+            airDate = STRING_VALUE,
+            episodeCode = STRING_VALUE,
+            characters = listOf(STRING_VALUE),
+            episodeUrl = STRING_VALUE,
             created = STRING_VALUE
         )
     }
