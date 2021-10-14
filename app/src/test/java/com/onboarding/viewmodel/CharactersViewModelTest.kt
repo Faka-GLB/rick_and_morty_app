@@ -49,6 +49,7 @@ class CharactersViewModelTest : ViewModelTest() {
         whenever(successResult.data).thenReturn(characterBaseMock)
         whenever(characterBaseMock.results).thenReturn(charactersList)
         whenever(service.getAllCharacters()).thenReturn(successResult)
+        whenever(database.getCharacters()).thenReturn(charactersList)
         runBlocking {
             viewModel.getCharacters().join()
         }

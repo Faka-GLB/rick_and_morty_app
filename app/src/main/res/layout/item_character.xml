@@ -9,7 +9,7 @@
         android:id="@+id/card_view_item_character_display"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardBackgroundColor="@color/astral_secondary_color_variant"
+        app:cardBackgroundColor="@color/astronaut_blue_secondary_color"
         app:cardCornerRadius="@dimen/item_character_card_view_corner_radius"
         app:cardElevation="@dimen/item_character_card_view_elevation"
         app:cardMaxElevation="@dimen/item_character_card_view_max_elevation"

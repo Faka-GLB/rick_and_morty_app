@@ -1,15 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/jewel_primary_color_variant"
     tools:context=".fragment.SeasonsFragment">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_seasons_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fragment_seasons_recycler_view_height"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/item_seasons" />
+
     <TextView
-        android:id="@+id/text_view_seasons_fragment_display_name"
+        android:id="@+id/text_view_seasons_fragment_connection_error"
+        style="@style/FragmentBaseText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/all_text_view_connection_error"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_view_seasons_fragment_empty_response_error"
+        style="@style/FragmentBaseText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/all_text_view_empty_response_error"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar_seasons_fragment_loading_state"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="@string/seasons_fragment_text_view_name_display" />
+        android:visibility="gone" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

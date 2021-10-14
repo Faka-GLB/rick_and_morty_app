@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layoutDescription="@xml/item_seasons_scene">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_item_seasons_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/astronaut_blue_secondary_color"
+        app:cardCornerRadius="@dimen/item_seasons_card_view_corner_radius"
+        app:cardElevation="@dimen/item_seasons_card_view_elevation"
+        app:cardMaxElevation="@dimen/item_seasons_card_view_max_elevation"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/item_seasons_margin_size_xsmall">
+
+            <TextView
+                android:id="@+id/text_view_item_seasons_episode_code"
+                style="@style/StandardText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_view_item_seasons_episode_name"
+                style="@style/FragmentBaseText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_seasons_margin_size_xsmall"
+                app:layout_constraintTop_toBottomOf="@id/text_view_item_seasons_air_date" />
+
+            <TextView
+                android:id="@+id/text_view_item_seasons_air_date"
+                style="@style/StandardSubtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_seasons_margin_size_xsmall"
+                android:text="@string/item_seasons_episode_air_date_text_view_text"
+                app:layout_constraintTop_toBottomOf="@id/text_view_item_seasons_episode_code" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.motion.widget.MotionLayout>
