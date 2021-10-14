@@ -38,5 +38,5 @@ data class CharactersResultResponse(
     val characterUrl: String = ConstantUtil.DEFAULT_STRING_VALUE,
 
     @SerializedName("created")
-    val created: String = ConstantUtil.DEFAULT_STRING_VALUE,
+    val created: String = ConstantUtil.DEFAULT_STRING_VALUE
 )
