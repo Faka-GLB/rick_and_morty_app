@@ -13,4 +13,11 @@
     <dimen name="item_character_card_view_max_elevation">12dp</dimen>
     <dimen name="characters_item_recycler_view_margin_xsmall">10dp</dimen>
     <dimen name="item_character_name_text_view_width">100dp</dimen>
+    <dimen name="style_standard_text_size">26sp</dimen>
+    <dimen name="style_standard_subtext_text_size_normal">16sp</dimen>
+    <dimen name="item_seasons_margin_size_xsmall">10dp</dimen>
+    <dimen name="item_seasons_card_view_corner_radius">20dp</dimen>
+    <dimen name="item_seasons_card_view_elevation">12dp</dimen>
+    <dimen name="item_seasons_card_view_max_elevation">15dp</dimen>
+    <dimen name="fragment_seasons_recycler_view_height">0dp</dimen>
 </resources>

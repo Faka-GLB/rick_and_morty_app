@@ -23,4 +23,16 @@
         <item name="android:textAlignment">center</item>
         <item name="android:textSize">@dimen/style_base_fragment_text_size</item>
     </style>
+    <style name="StandardText">
+        <item name="fontFamily">sans-serif-black</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/style_standard_text_size</item>
+        <item name="android:textColor">@color/apple_primary_color</item>
+    </style>
+    <style name="StandardSubtext">
+        <item name="fontFamily">sans-serif-black</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/style_standard_subtext_text_size_normal</item>
+        <item name="android:textColor">@color/apple_primary_color</item>
+    </style>
 </resources>

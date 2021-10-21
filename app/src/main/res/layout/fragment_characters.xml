@@ -20,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/FragmentBaseText"
-        android:text="@string/characters_fragment_text_view_connection_error"
+        android:text="@string/all_text_view_connection_error"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -30,7 +30,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/FragmentBaseText"
-        android:text="@string/characters_fragment_text_view_empty_response_error"
+        android:text="@string/all_text_view_empty_response_error"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
